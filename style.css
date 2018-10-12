@@ -1,3 +1,5 @@
+/* General */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -21,25 +23,13 @@ p {
 .webpage {
 	width: 1100px;
 	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
 }
 
 #grid {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	grid-template-rows:  120px 420px 80px 600px 80px;
-}
-
-.logo {
-	margin-top: 20px;
-	margin-left: 40px;
-}
-
-#header_bg {
-	background-image: url(header_bg.jpg);
-	width: 1100px;
-	height: 100px;
-	display: grid;
-	grid-template-columns: 290px auto;
+	grid-template-rows:  120px 400px 450px 50px;
 }
 
 #navbar {
@@ -53,33 +43,127 @@ p {
 #navbar li {
 	display:inline-block;
 	margin-right: 30px;
-	transition: 0.5%;
-	color: #777777;
 }
 
-#navbar li:hover {
+#navbar li a {
+	text-decoration: none;
+	color: #777777; 
+	transition: 0.5%;	
+}
+
+#navbar li a:hover {
 	color: #000000;
+}
+
+.clickslider {
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	margin-left: -40px;
+}
+
+.clickslider li:hover {
+	color: gray;
+}
+
+/* Foto's */
+#header_bg {
+	background-image: url(header_bg.jpg);
+	display: grid;
+	grid-template-columns: 290px auto;
+}
+
+.logo {
+	margin-top: 20px;
+	margin-left: 40px;
 }
 
 #banner_bg {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 1;
 	grid-row-start: 2;
 	grid-row-end: 2;
 	background-image: url(banner_bg.jpg);
+	display: grid;
+	grid-template-columns: 760px auto;
 }
 
-#bannerimg {
-float: left;
+#bannerimg {	
+	padding: 20px;
+	margin-left: 20px;
 }
 
-#textcolor {
+#car {
+	margin-top: 20px;
+	margin-left: 150px;
+	height: 300px;
+	border: white solid 10px;
+}
+
+#clothing {
+	margin-top: 20px;
+	margin-left: 100px;
+	height: 300px;
+	border: white solid 10px;
+}
+
+#bannertext {
+	grid-column-start: 2;
+	grid-column-end: 3;
 	color: white;
 }
 
-#fadeslider {
+.sliders {
 	grid-column-start: 1;
-	grid-column-end: 2;
+	grid-column-end: 1;
 	grid-row-start: 3;
+	grid-row-end: 3;
+	display: grid;
+	grid-template-columns: 330px 330px 330px;
+	grid-template-rows: 150px 250px 100px;
+	margin-top: 70px;
+	margin-left: 55px;
+}
+
+.nissancar {
+	height: 150px;
+}
+
+.volkswagencar {
+	height: 150px;
+}
+
+.mercedes {
+	height: 150px;
+}
+
+.hoodie {
+	margin-left: 100px;
+	height: 150px;
+}
+
+.tshirts {
+	margin-left: 100px;
+	height: 150px;
+}
+
+.longsleeve {
+	margin-left: 60px;
+	height: 150px;
+}
+
+#footer_bg {
+	grid-column-start: 1;
+	grid-column-end: 1;
+	grid-row-start: 4;
 	grid-row-end: 4;
+	background-image: url(footer_bg.jpg);
+	display: grid;
+	grid-template-columns: 700px auto;
+}
+
+/* Text */
+#naam {
+	margin-left: 550px;
+	color: white;
 }
