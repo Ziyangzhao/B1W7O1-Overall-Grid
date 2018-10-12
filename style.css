@@ -10,11 +10,6 @@ h1 {
 	line-height: 30px;
 }
 
-h2 {
-	font-size: 20px
-	line-height: 22px;
-}
-
 p {
 	font-size: 14px;
 	line-height: 20px;
@@ -47,8 +42,7 @@ p {
 
 #navbar li a {
 	text-decoration: none;
-	color: #777777; 
-	transition: 0.5%;	
+	color: #777777; 	
 }
 
 #navbar li a:hover {
